@@ -1,5 +1,3 @@
-Sure, here's a basic structure for your repository's documentation. You can modify it according to your project's requirements:
-
 # SH2RE
 
 Welcome to the SH2RE repository. This project allows you to upload images,pdfs,videos etc and get direct perma link to use in projects.
