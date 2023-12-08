@@ -48,4 +48,4 @@ To contribute to SH2RE, follow these steps:
 
 ## Contact
 
-If you want to contact me, you can reach me at `<admin@rahul.eu.org>`.
+If you want to contact me, you can reach me at `admin@rahul.eu.org`.
