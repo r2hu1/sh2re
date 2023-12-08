@@ -10,5 +10,6 @@ export async function POST(request) {
     };
 
     cookies().set(options);
+    cookies().delete("session");
     return NextResponse.json({}, { status: 200 });
 }
