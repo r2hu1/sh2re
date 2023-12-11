@@ -27,7 +27,10 @@ npm install
 ```
 4. Get your api key from uploadthings
 5. Make a .env file and put your api there
-
+```bash
+UPLOADTHING_SECRET="**********"
+UPLOADTHING_APP_ID="**********"
+```
 ## Using SH2RE
 
 To use SH2RE, follow these steps:
