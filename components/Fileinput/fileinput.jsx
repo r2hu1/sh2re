@@ -7,8 +7,6 @@ import { UploadButton, UploadDropzone } from "../uploadthing/uploadthing";
 import { ourFileRouter } from "@/app/api/uploadthing/core";
 import { useToast } from "@/components/ui/use-toast"
 import { Input } from "@/components/ui/input"
-import { getRedirectResult } from "firebase/auth";
-import { auth } from "@/lib/firebase-config";
 
 const Fileinput = () => {
 
@@ -24,14 +22,9 @@ const Fileinput = () => {
 
     const { toast } = useToast();
 
-    const [isLogged,setIsLogged] = useState(false);
-    fetch('/api/login')
-    .then(response => response.json())
-    .then(data => setIsLogged(data.isLogged));
-
     return (
         <>
-            <div className="flex justify-center w-full mx-auto sm:max-w-lg mt-8 mb-14 p-6">
+            <div className="flex justify-center w-full mx-auto sm:max-w-lg p-6 h-screen -mt-8">
 
                 <div className="flex flex-col items-center justify-center w-full bg-white sm:w-3/4 sm:rounded-lg">
                     <div className="mt-10 mb-10 text-center">
@@ -39,7 +32,7 @@ const Fileinput = () => {
                         <p className="text-xs text-gray-500">File should be of format .jpg, .jpeg, .png, .webp, .pdf</p>
                     </div>
 
-                    {isLogged ? (<UploadDropzone
+                    <UploadDropzone
                         endpoint="imageUploader"
                         onClientUploadComplete={(res) => {
                             setFilez(res);
@@ -62,11 +55,7 @@ const Fileinput = () => {
                         onUploadBegin={(name) => {
                             console.log("Uploading: ", name);
                         }}
-                    />) : (
-                        <div className="flex flex-col items-center justify-center w-full bg-white sm:w-3/4 sm:rounded-lg">
-                            <p className="text-xs text-gray-500">Please login to upload files.</p>
-                        </div>
-                    )}
+                    />
 
                     {filez.length > 0 && (
                         <div className="mt-8 mx-auto flex gap-2">

@@ -1,4 +1,3 @@
-import { auth as auths, provider } from "@/lib/firebase-config";
 import { createUploadthing } from "uploadthing/next";
  
 const f = createUploadthing();

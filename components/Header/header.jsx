@@ -4,7 +4,6 @@ import { Button } from "../ui/button";
 import { auth } from "@/lib/firebase";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import SignInButton from "../Signin/signin";
 
 const Header = () => {
         return (
@@ -17,7 +16,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div>
-                    <SignInButton/>
+                    <Button onClick={()=> navigator.share({title:location.host,text:"Get direct link of your images.",url:location.href})}>Share</Button>
                 </div>
             </header>
         )
