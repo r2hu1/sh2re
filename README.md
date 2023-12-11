@@ -25,6 +25,8 @@ cd sh2re
 ```bash
 npm install
 ```
+4. Get your api key from uploadthings
+5. Make a .env file and put your api there
 
 ## Using SH2RE
 
