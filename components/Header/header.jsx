@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 const Header = () => {
         return (
-            <header className="flex justify-between m-6 mb-0">
+            <header className="flex justify-between m-6 mb-0 md:mx-32">
                 <div>
                     <Link href={"/"}>
                         <h2 className="font-bold text-4xl select-none cursor-pointer ">

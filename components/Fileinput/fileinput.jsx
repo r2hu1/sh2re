@@ -26,7 +26,7 @@ const Fileinput = () => {
         <>
             <div className="flex justify-center w-full mx-auto sm:max-w-lg p-6 h-screen -mt-8">
 
-                <div className="flex flex-col items-center justify-center w-full bg-white sm:w-3/4 sm:rounded-lg">
+                <div className="flex flex-col items-center justify-center w-full sm:w-3/4 sm:rounded-lg">
                     <div className="mt-10 mb-10 text-center">
                         <h2 className="text-2xl font-semibold mb-2">Upload your files</h2>
                         <p className="text-xs text-gray-500">File should be of format .jpg, .jpeg, .png, .webp, .pdf</p>
