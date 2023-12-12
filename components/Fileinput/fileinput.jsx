@@ -24,7 +24,7 @@ const Fileinput = () => {
 
     return (
         <>
-            <div className="flex justify-center w-full mx-auto sm:max-w-lg p-6 h-screen -mt-8">
+            <div className="flex justify-center w-full mx-auto sm:max-w-lg p-6 h-screen -mt-12">
 
                 <div className="flex flex-col items-center justify-center w-full sm:w-3/4 sm:rounded-lg">
                     <div className="mt-10 mb-10 text-center">
